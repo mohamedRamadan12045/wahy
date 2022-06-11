@@ -4,6 +4,9 @@ if(empty($_POST['name']) || empty($_POST['subject']) || empty($_POST['message'])
   exit();
 }
 
+$host = "smtp.mailtrap.io"
+$username = "baa67e4c49c883"
+$password = "47f36fa879c16e"
 $name = strip_tags(htmlspecialchars($_POST['name']));
 $email = strip_tags(htmlspecialchars($_POST['email']));
 $m_subject = strip_tags(htmlspecialchars($_POST['subject']));
